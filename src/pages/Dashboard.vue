@@ -8,22 +8,21 @@
           :chart-data="dailySalesChart.data"
           :chart-options="dailySalesChart.options"
           :chart-type="'Line'"
+          :chart-image="dailySalesChart.image"
           data-background-color="blue"
         >
           <template slot="content">
-            <h4 class="title">Daily Sales</h4>
+            <h4 class="title">Inappropriate parking</h4>
             <p class="category">
-              <span class="text-success"
-                ><i class="fas fa-long-arrow-alt-up"></i> 55%
-              </span>
-              increase in today sales.
+              Car parked on the walking path by the cross road, blocking the
+              view to check on coming vehicles.
             </p>
           </template>
 
           <template slot="footer">
             <div class="stats">
               <md-icon>access_time</md-icon>
-              updated 4 minutes ago
+              reported 4 minutes ago
             </div>
           </template>
         </chart-card>
@@ -36,19 +35,21 @@
           :chart-options="emailsSubscriptionChart.options"
           :chart-responsive-options="emailsSubscriptionChart.responsiveOptions"
           :chart-type="'Bar'"
+          :chart-image="emailsSubscriptionChart.image"
           data-background-color="red"
         >
           <template slot="content">
-            <h4 class="title">Email Subscription</h4>
+            <h4 class="title">Yet another genius</h4>
             <p class="category">
-              Last Campaign Performance
+              And yet one more parking genius. Unbelievable how people do not
+              care about others.
             </p>
           </template>
 
           <template slot="footer">
             <div class="stats">
               <md-icon>access_time</md-icon>
-              updated 10 days ago
+              reported 3 days ago
             </div>
           </template>
         </chart-card>
@@ -60,19 +61,21 @@
           :chart-data="dataCompletedTasksChart.data"
           :chart-options="dataCompletedTasksChart.options"
           :chart-type="'Line'"
+          :chart-image="dataCompletedTasksChart.image"
           data-background-color="green"
         >
           <template slot="content">
-            <h4 class="title">Completed Tasks</h4>
+            <h4 class="title">Dangerous parking</h4>
             <p class="category">
-              Last Campaign Performance
+              I have to contact about a car which is always dangerously parked
+              near my home.
             </p>
           </template>
 
           <template slot="footer">
             <div class="stats">
               <md-icon>access_time</md-icon>
-              campaign sent 26 minutes ago
+              reported 10 days ago
             </div>
           </template>
         </chart-card>
@@ -239,7 +242,8 @@ export default {
             bottom: 0,
             left: 0
           }
-        }
+        },
+        image: require("@/assets/img/car1.jpg")
       },
       dataCompletedTasksChart: {
         data: {
@@ -259,7 +263,8 @@ export default {
             bottom: 0,
             left: 0
           }
-        }
+        },
+        image: require("@/assets/img/car2.png")
       },
       emailsSubscriptionChart: {
         data: {
@@ -292,6 +297,7 @@ export default {
             left: 0
           }
         },
+        image: require("@/assets/img/car3.jpg"),
         responsiveOptions: [
           [
             "screen and (max-width: 640px)",

@@ -1,11 +1,6 @@
 <template>
   <md-card>
-    <md-card-header
-      class="card-chart"
-      :data-background-color="dataBackgroundColor"
-    >
-      <div :id="chartId" class="ct-chart"></div>
-    </md-card-header>
+    <img mat-card-image :src="chartImage" alt="Inappropriate parking" />
 
     <md-card-content>
       <slot name="content"></slot>
@@ -23,6 +18,10 @@ export default {
     footerText: {
       type: String,
       default: ""
+    },
+    chartImage: {
+      type: String,
+      default: require("@/assets/img/car1.jpg")
     },
     headerTitle: {
       type: String,
