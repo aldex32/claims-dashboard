@@ -83,14 +83,14 @@
       <div
         class="md-layout-item md-medium-size-50 md-xsmall-size-100 md-size-25"
       >
-        <stats-card data-background-color="green">
+        <stats-card data-background-color="red">
           <template slot="header">
-            <md-icon>store</md-icon>
+            <md-icon>warning</md-icon>
           </template>
 
           <template slot="content">
-            <p class="category">Revenue</p>
-            <h3 class="title">$34,245</h3>
+            <p class="category">Opened</p>
+            <h3 class="title">5</h3>
           </template>
 
           <template slot="footer">
@@ -104,23 +104,20 @@
       <div
         class="md-layout-item md-medium-size-50 md-xsmall-size-100 md-size-25"
       >
-        <stats-card data-background-color="orange">
+        <stats-card data-background-color="green">
           <template slot="header">
-            <md-icon>content_copy</md-icon>
+            <md-icon>check</md-icon>
           </template>
 
           <template slot="content">
-            <p class="category">Used Space</p>
-            <h3 class="title">
-              49/50
-              <small>GB</small>
-            </h3>
+            <p class="category">Closed</p>
+            <h3 class="title">34</h3>
           </template>
 
           <template slot="footer">
             <div class="stats">
-              <md-icon class="text-danger">warning</md-icon>
-              <a href="#pablo">Get More Space...</a>
+              <md-icon>date_range</md-icon>
+              Last month
             </div>
           </template>
         </stats-card>
@@ -128,20 +125,22 @@
       <div
         class="md-layout-item md-medium-size-50 md-xsmall-size-100 md-size-25"
       >
-        <stats-card data-background-color="red">
+        <stats-card data-background-color="orange">
           <template slot="header">
-            <md-icon>info_outline</md-icon>
+            <md-icon>show_chart</md-icon>
           </template>
 
           <template slot="content">
-            <p class="category">Fixed Issues</p>
-            <h3 class="title">75</h3>
+            <p class="category">Daily average</p>
+            <h3 class="title">
+              3
+            </h3>
           </template>
 
           <template slot="footer">
             <div class="stats">
-              <md-icon>local_offer</md-icon>
-              Tracked from Github
+              <md-icon class="text-danger">warning</md-icon>
+              Increased over time...
             </div>
           </template>
         </stats-card>
@@ -155,8 +154,8 @@
           </template>
 
           <template slot="content">
-            <p class="category">Folowers</p>
-            <h3 class="title">+245</h3>
+            <p class="category">Reporters</p>
+            <h3 class="title">+82</h3>
           </template>
 
           <template slot="footer">
@@ -168,40 +167,40 @@
         </stats-card>
       </div>
       <div
-        class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-50"
+        class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-100"
       >
         <md-card>
           <md-card-header data-background-color="orange">
-            <h4 class="title">Employees Stats</h4>
-            <p class="category">New employees on 15th September, 2016</p>
+            <h4 class="title">Opened Claims</h4>
+            <p class="category">Opened claims on 08th July, 2019</p>
           </md-card-header>
           <md-card-content>
             <ordered-table table-header-color="orange"></ordered-table>
           </md-card-content>
         </md-card>
       </div>
-      <div
-        class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-50"
-      >
-        <nav-tabs-card>
-          <template slot="content">
-            <span class="md-nav-tabs-title">Tasks:</span>
-            <md-tabs md-sync-route class="md-success" md-alignment="left">
-              <md-tab id="tab-home" md-label="Bugs" md-icon="bug_report">
-                <nav-tabs-table></nav-tabs-table>
-              </md-tab>
+<!--      <div-->
+<!--        class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-50"-->
+<!--      >-->
+<!--        <nav-tabs-card>-->
+<!--          <template slot="content">-->
+<!--            <span class="md-nav-tabs-title">Tasks:</span>-->
+<!--            <md-tabs md-sync-route class="md-success" md-alignment="left">-->
+<!--              <md-tab id="tab-home" md-label="Bugs" md-icon="bug_report">-->
+<!--                <nav-tabs-table></nav-tabs-table>-->
+<!--              </md-tab>-->
 
-              <md-tab id="tab-pages" md-label="Website" md-icon="code">
-                <nav-tabs-table></nav-tabs-table>
-              </md-tab>
+<!--              <md-tab id="tab-pages" md-label="Website" md-icon="code">-->
+<!--                <nav-tabs-table></nav-tabs-table>-->
+<!--              </md-tab>-->
 
-              <md-tab id="tab-posts" md-label="server" md-icon="cloud">
-                <nav-tabs-table></nav-tabs-table>
-              </md-tab>
-            </md-tabs>
-          </template>
-        </nav-tabs-card>
-      </div>
+<!--              <md-tab id="tab-posts" md-label="server" md-icon="cloud">-->
+<!--                <nav-tabs-table></nav-tabs-table>-->
+<!--              </md-tab>-->
+<!--            </md-tabs>-->
+<!--          </template>-->
+<!--        </nav-tabs-card>-->
+<!--      </div>-->
     </div>
   </div>
 </template>
